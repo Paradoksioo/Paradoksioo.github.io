@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'drukcur';
+    /* Название шрифта для использования в CSS */
+    src: url('../fonts/DrukCur/druktextwidecyr-medium.otf') format('truetype');
+    /* Путь к файлу шрифта */
+    font-weight: normal;
+    /* Нормальный вес шрифта */
+    font-style: normal;
+    /* Обычный стиль шрифта */
+}
+
+@font-face { 
+    font-family: 'TildaSans';
+    src: url('../fonts/Tilda/TildaSans-Medium.woff') format('truetype');
+    font-weight: normal;
+    /* Нормальный вес шрифта */
+    font-style: normal;
+}
+
+
+/* KOHO */
+
+
+/* KOHO */
+
+@font-face {
+    font-family: 'KoHo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Regular'), url('../fonts/KoHo/KoHo-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Italic'), url('../fonts/KoHo/KoHo-Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Bold'), url('../fonts/KoHo/KoHo-Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Bold Italic'), url('../fonts/KoHo/KoHo-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo ExtraLight Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo ExtraLight Regular'), url('../fonts/KoHo/KoHo-ExtraLight.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Light Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Light Regular'), url('../fonts/KoHo/KoHo-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Medium Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Medium Regular'), url('../fonts/KoHo/KoHo-Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo SemiBold Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo SemiBold Regular'), url('../fonts/KoHo/KoHo-SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo ExtraLight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo ExtraLight Italic'), url('../fonts/KoHo/KoHo-ExtraLightItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Light Italic'), url('../fonts/KoHo/KoHo-LightItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Medium Italic'), url('../fonts/KoHo/KoHo-MediumItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo SemiBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo SemiBold Italic'), url('../fonts/KoHo/KoHo-SemiBoldItalic.woff') format('woff');
+}
+
