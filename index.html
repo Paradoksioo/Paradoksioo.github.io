@@ -4,6 +4,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/fonts.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
@@ -13,7 +24,7 @@
     <body>
         <div class="panel">
             <div class="header__button-container">
-                <button id="toggleBtn" class="header__button">
+                <button id="toggleBtn" class="header__button" aria-label="menu">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
@@ -23,7 +34,7 @@
         <header class="header" id="header">
             <div class="header__container">
                 <div class="header__logo">
-                    <img src="./assets/img/mlogo.png" alt="" />
+                    <img src="./assets/img/mlogo.png" alt="logo" />
                 </div>
                 <ul class="header__list">
                     <li>
@@ -49,7 +60,7 @@
                             >Products</a
                         >
                     </li>
-                    
+
                     <li>
                         <a href="#" class="header__list__item" data-section=""
                             >Statistics</a
@@ -88,32 +99,65 @@
                         <h2 class="all-title about__title">About us</h2>
                         <div class="about__content">
                             <div class="about__info">
-                                <p>Our <span>dynamic</span> and <span>growing</span> company bridges producers in Eastern Europe with processors in Germany and neighboring EU countries. We aim to <span>supply the German market</span> with high-quality raw materials for the food sector.</p>
+                                <p>
+                                    Our <span>dynamic</span> and
+                                    <span>growing</span> company bridges
+                                    producers in Eastern Europe with processors
+                                    in Germany and neighboring EU countries. We
+                                    aim to
+                                    <span>supply the German market</span> with
+                                    high-quality raw materials for the food
+                                    sector.
+                                </p>
                                 <div class="about__image__container">
-                                    <img src="./assets/img/about-1.jpg" alt="">
+                                    <img
+                                        src="./assets/img/about-1.jpg"
+                                        alt="aboutus-company"
+                                    />
                                 </div>
                             </div>
                             <div class="about__info">
-                                <p>Ukraine, Kazakhstan, Moldova, and other regions are crucial for European consumers, especially for products like wheat flour, sunflower oil (refined and unrefined), rapeseed, rapeseed oil, white sugar, and wheat. Our network <span>ensures sustainable and qualitative supply chains</span>, fostering innovation and direct export opportunities for farmers while meeting European standards.</p>
+                                <p>
+                                    Ukraine, Kazakhstan, Moldova, and other
+                                    regions are crucial for European consumers,
+                                    especially for products like wheat flour,
+                                    sunflower oil (refined and unrefined),
+                                    rapeseed, rapeseed oil, white sugar, and
+                                    wheat. Our network
+                                    <span
+                                        >ensures sustainable and qualitative
+                                        supply chains</span
+                                    >, fostering innovation and direct export
+                                    opportunities for farmers while meeting
+                                    European standards.
+                                </p>
                                 <div class="about__image__container">
-                                    <img src="./assets/img/about-2.jpg" alt="">
+                                    <img
+                                        src="./assets/img/about-2.jpg"
+                                        alt="aboutus-qualitative"
+                                    />
                                 </div>
-
                             </div>
                             <div class="about__info about__info__undertext">
-                                <p>This collaboration benefits all parties by enhancing <span>agricultural practices</span> and ensuring <span>top-quality</span> products for German consumers.</p>
-                                
-                                
+                                <p>
+                                    This collaboration benefits all parties by
+                                    enhancing
+                                    <span>agricultural practices</span> and
+                                    ensuring <span>top-quality</span> products
+                                    for German consumers.
+                                </p>
                             </div>
                             <div class="about__info about__info__undertext">
-                                <p><strong>ASK US AND GET AN INDIVIDUAL OFFER TODAY!!!</strong></p>
-                                
-
+                                <p>
+                                    <strong
+                                        >ASK US AND GET AN INDIVIDUAL OFFER
+                                        TODAY!!!</strong
+                                    >
+                                </p>
                             </div>
                             <div class="anchor__button">
                                 <button>Get in touch</button>
                             </div>
-
                         </div>
                     </div>
                 </section>
@@ -126,54 +170,422 @@
                                 autoplay
                                 muted
                                 loop
-                                
-                            ></video>
+                                id="benef__back"
+                            >
+                                <!-- mobile play script -->
+                                <script>
+                                    document.addEventListener(
+                                        "DOMContentLoaded",
+                                        (event) => {
+                                            const video =
+                                                document.getElementById(
+                                                    "benef__back"
+                                                );
+
+                                            if (window.innerWidth < 999) {
+                                                video.playbackRate = 0.6;
+                                            }
+                                        }
+                                    );
+                                </script>
+                            </video>
                         </div>
                         <div class="benefits__points">
                             <div class="benefits__point">
                                 <div class="benefits__point__image">
-                                    <img src="./assets/img/hand-thumbs-up.svg" alt="">
+                                    <img
+                                        src="./assets/img/hand-thumbs-up.svg"
+                                        alt="benef-quaity"
+                                    />
                                 </div>
-                                <h4 class="benefits__title">High <br> quality products</h4>
-                                <p>We entrust the control of quality and quantity to our permanent partners and experts Baltic Control and SGS, world leaders in inspection services, expertise, testing and certification.</p>
+                                <h4 class="benefits__title">
+                                    High <br />
+                                    quality products
+                                </h4>
+                                <p>
+                                    We rely on our trusted partners Baltic
+                                    Control and SGS, global leaders in
+                                    inspection, expertise, testing, and
+                                    certification, to ensure the highest
+                                    standards of quality and quantity.
+                                </p>
                             </div>
                             <div class="benefits__point">
                                 <div class="benefits__point__image">
-                                    <img src="./assets/img/crown.svg" alt="">
+                                    <img
+                                        src="./assets/img/crown.svg"
+                                        alt="benefits experience"
+                                    />
                                 </div>
-                                <h4 class="benefits__title">Market <br> experience</h4>
-                                <p>Experience, high qualifica-tions and professional, well-coordinated work of the company's employees make it possible to ensure the fulfillment of orders of any complexity and volume, avoid errors in the conduct of business, and thereby minimize the risks of our partners.</p>
+                                <h4 class="benefits__title">
+                                    Market <br />
+                                    experience
+                                </h4>
+                                <p>
+                                    Our experienced, highly qualified, and
+                                    well-coordinated team ensures flawless order
+                                    execution, preventing business errors and
+                                    minimizing partner risks.
+                                </p>
                             </div>
                             <div class="benefits__point">
                                 <div class="benefits__point__image">
-                                    <img src="./assets/img/globe.svg" alt="">
+                                    <img
+                                        src="./assets/img/globe.svg"
+                                        alt="Geography"
+                                    />
                                 </div>
-                                <h4 class="benefits__title">Geography of <br> exports</h4>
-                                <p>Today we export our products to more than 30 countries around the world.</p>
+                                <h4 class="benefits__title">
+                                    Geography of <br />
+                                    exports
+                                </h4>
+                                <p>
+                                    Currently, we export our products to over 30
+                                    countries worldwide.
+                                </p>
                             </div>
                             <div class="benefits__point">
                                 <div class="benefits__point__image">
-                                    <img src="./assets/img/currency-euro.svg" alt="">
+                                    <img
+                                        src="./assets/img/currency-euro.svg"
+                                        alt="price"
+                                    />
                                 </div>
-                                <h4 class="benefits__title">Profitable <br> price</h4>
-                                <p>By financing direct producers for future harvest, providing fertilizer for processing plants, supplying seeds and agricultural equipment, we can minimize prices.</p>
+                                <h4 class="benefits__title">
+                                    Profitable <br />
+                                    price
+                                </h4>
+                                <p>
+                                    By financing direct producers, providing
+                                    fertilizers, and supplying seeds and
+                                    agricultural equipment, we can offer
+                                    competitive pricing.
+                                </p>
                             </div>
                             <div class="benefits__point">
                                 <div class="benefits__point__image">
-                                    <img src="./assets/img/howwoek01.svg" alt="">
+                                    <img
+                                        src="./assets/img/howwoek01.svg"
+                                        alt="Highly"
+                                    />
                                 </div>
-                                <h4 class="benefits__title">Highly <br> qualified employees</h4>
-                                <p>The competence of the staff in the field of provided services and the professional, well-coordinated work of the team, which in turn allows us to guarantee the fulfillment of orders of any complexity and volume, thereby increasing the number of customers annually and expanding the company's geography in market is expanded.</p>
+                                <h4 class="benefits__title">
+                                    Highly <br />
+                                    qualified employees
+                                </h4>
+                                <p>
+                                    Our team's expertise and coordinated efforts
+                                    guarantee order fulfillment, increase our
+                                    customer base annually, and expand our
+                                    market reach.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="products">
+                    <div class="container">
+                        <!-- wheat flour (2 types). rapseed. sunflower oil (2 types). wheat. sugar. -->
+                        <h2 class="all-title">Our products</h2>
+                        <div class="products__list">
+                            <div class="product__item">
+                                <h4 class="product__title">
+                                    Wheat flour (Premium)
+                                </h4>
+                                <div class="product__image">
+                                    <img
+                                        src="./assets/img/wheat-flour.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/wheat-flour.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/wheat-flour.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/wheat-flour.webp"
+                                        alt="wheat"
+                                    />
+                                </div>
+                                <div class="product__disc">
+                                    <div class="product__disc__row">
+                                        <p>Types 405 D, 450D</p>
+                                        <img
+                                            src="./assets/img/Check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product__disc__row">
+                                        <p>
+                                            Price is calculated according to
+                                            distance!
+                                        </p>
+                                        <img
+                                            src="./assets/img/currency-euro.svg "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product__button__more">
+                                        <button id="toggleDisc">
+                                            <p>Click for more information</p>
+                                            <img
+                                                class="product__more__image"
+                                                src="./assets/img/arrow-bar-down.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                    <div class="product__disc__menu">
+                                        <div class="product__disc__menu__container">
+                                            <div class="close__product__menu">
+                                                <button id="closeProductMenu"><img src="./assets/img/x-lg.svg" alt=""></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="anchor__button product__button__foot"
+                                    >
+                                        <button>Link with us</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <h4 class="product__title">
+                                    Rapseeds
+                                </h4>
+                                <div class="product__image">
+                                    <img
+                                        src="./assets/img/rapseed.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/rapseed.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/rapseed.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/rapseed.webp"
+                                        alt="wheat"
+                                    />
+                                </div>
+                                <div class="product__disc">
+                                    <div class="product__disc__row">
+                                        <p>Types 405 D, 450D</p>
+                                        <img
+                                            src="./assets/img/Check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product__disc__row">
+                                        <p>
+                                            Price is calculated according to
+                                            distance!
+                                        </p>
+                                        <img
+                                            src="./assets/img/currency-euro.svg "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product__button__more">
+                                        <button id="toggleDisc">
+                                            <p>Click for more information</p>
+                                            <img
+                                                class="product__more__image"
+                                                src="./assets/img/arrow-bar-down.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="anchor__button product__button__foot"
+                                    >
+                                        <button>Link with us</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <h4 class="product__title">
+                                    Sunflower oil, raw
+                                </h4>
+                                <div class="product__image">
+                                    <img
+                                        src="./assets/img/oil2.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/sunflower-oil.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/oil2.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/sunflower-oil.webp"
+                                        alt="wheat"
+                                    />
+                                </div>
+                                <div class="product__disc">
+                                    <div class="product__disc__row">
+                                        <p>Types 405 D, 450D</p>
+                                        <img
+                                            src="./assets/img/Check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product__disc__row">
+                                        <p>
+                                            Price is calculated according to
+                                            distance!
+                                        </p>
+                                        <img
+                                            src="./assets/img/currency-euro.svg "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product__button__more">
+                                        <button id="toggleDisc">
+                                            <p>Click for more information</p>
+                                            <img
+                                                class="product__more__image"
+                                                src="./assets/img/arrow-bar-down.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="anchor__button product__button__foot"
+                                    >
+                                        <button>Link with us</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <h4 class="product__title">
+                                    Wheat (Premium)
+                                </h4>
+                                <div class="product__image">
+                                    <img
+                                        src="./assets/img/wheat.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/wheat.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/wheat.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/wheat.webp"
+                                        alt="wheat"
+                                    />
+                                </div>
+                                <div class="product__disc">
+                                    <div class="product__disc__row">
+                                        <p>Types 405 D, 450D</p>
+                                        <img
+                                            src="./assets/img/Check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product__disc__row">
+                                        <p>
+                                            Price is calculated according to
+                                            distance!
+                                        </p>
+                                        <img
+                                            src="./assets/img/currency-euro.svg "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product__button__more">
+                                        <button id="toggleDisc">
+                                            <p>Click for more information</p>
+                                            <img
+                                                class="product__more__image"
+                                                src="./assets/img/arrow-bar-down.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="anchor__button product__button__foot"
+                                    >
+                                        <button>Link with us</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <h4 class="product__title">
+                                    Sugar
+                                </h4>
+                                <div class="product__image">
+                                    <img
+                                        src="./assets/img/sugar.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/sugar.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/sugar.webp"
+                                        alt="wheat"
+                                    />
+                                    <img
+                                        src="./assets/img/sugar.webp"
+                                        alt="wheat"
+                                    />
+                                </div>
+                                <div class="product__disc">
+                                    <div class="product__disc__row">
+                                        <p>Types 405 D, 450D</p>
+                                        <img
+                                            src="./assets/img/Check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product__disc__row">
+                                        <p>
+                                            Price is calculated according to
+                                            distance!
+                                        </p>
+                                        <img
+                                            src="./assets/img/currency-euro.svg "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product__button__more">
+                                        <button id="toggleDisc">
+                                            <p>Click for more information</p>
+                                            <img
+                                                class="product__more__image"
+                                                src="./assets/img/arrow-bar-down.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="anchor__button product__button__foot"
+                                    >
+                                        <button>Link with us</button>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
                     </div>
                 </section>
-                <section class="products">
 
-                </section>
-
-                <br><br><br><br><br><br><br><br><br><br><br>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
         </main>
 
@@ -183,15 +595,23 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/js/intlTelInput.min.js"
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/js/intlTelInput.min.js"
             integrity="sha512-AMKR42wJW2vL/KYXHyQHc4d2oN0c8x4h8mvK3b+8nBsZgFhEiEx+oZRfckgRWZ7agTgnb17OfGtzw6en8f/A9A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/js/intlTelInput-jquery.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/js/intlTelInput-jquery.min.js"
             integrity="sha512-v85f/2W0aZUSlBdMoTDjnXw5Lf1cAAYc+4sUwrrRVKNV22NXCFS7UC9syYdBhQcqI2CjQ1GLGXxdYAX4sFVYpw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
 
         <script src="./assets/js/script.js"></script>
         <script src="./assets/js/gsap-scr.js"></script>
+
+        <script src="./assets/js/products.js"></script>
     </body>
 </html>
